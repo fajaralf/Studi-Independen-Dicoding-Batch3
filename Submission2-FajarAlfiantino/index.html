@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission2</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>BOOKSHELF</h1>
+    </header>
+    <main class="container">
+        <div class="box">
+            <section class="input_section">
+                <h1>INPUT BOOK</h1>
+                <form id="inputBook">
+                    <div class="input">
+                        <label for="inputBookTitle">Judul</label>
+                        <input id="inputBookTitle" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookAuthor">Penulis</label>
+                        <input id="inputBookAuthor" type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="inputBookYear">Tahun</label>
+                        <input id="inputBookYear" type="number" required>
+                    </div>
+                    <div class="checkbox">
+                        <div class="input_inline">
+                            <label for="inputBookIsComplete">Selesai dibaca</label>
+                            <input id="inputBookIsComplete" type="checkbox">
+                        </div>
+                        <div class="input_inline">
+                            <label for="inputBookFavorite">Favorite</label>
+                            <input id="inputBookFavorite" type="checkbox">
+                        </div>
+                    </div>
+                    <button id="bookSubmit" type="submit">Masukkan Buku ke rak</button>
+                </form>
+            </section>
+            <aside>
+                <section class="card-search">
+                    <h1>SEARCH BOOK</h1>
+                    <form id="searchBook">
+                        <label for="searchBookTitle">Judul</label>
+                        <input id="searchBookTitle" type="text">
+                        <button id="searchSubmit" type="submit">Cari</button>
+                    </form>
+                </section>
+            </aside>
+        </div>
+
+        <div class="box">
+            <section class="bookShelf">
+                <h1>FAVORITE BOOK</h1>
+                <div class="bookList" id="FavoriteBookList">
+                    <!-- <article class="BookItem">
+                        <h3>Book Tittle: </h3>
+                        <p>Author: </p>
+                        <p>Year: </p>
+                        <div class="action">
+                            <button id="favoriteBook" class="yellow"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> Hapus Favorite</button>
+                            <button id="deleteBook" class="red"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                </svg> Hapus</button>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+        </div>
+
+        <div class="box">
+            <section class="bookShelf">
+                <h1>INCOMPLETE BOOK</h1>
+                <div class="bookList" id="InCompleteBookList">
+                    <!-- <article class="bookItem">
+                        <h3>Book Tittle: </h3>
+                        <p>Author: </p>
+                        <p>Year: </p>
+                        <div class="action">
+                            <button id="completeBook" class="green">Selesai Dibaca</button>
+                            <button id="favoriteBook" class="yellow">Jadikan Favorite</button>
+                            <button id="deleteBook" class="red">Hapus</button>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+            <section class="bookShelf">
+                <h1>COMPLETE BOOK</h1>
+                <div class="bookList" id="CompleteBookList">
+                    <!-- <article class="bookItem">
+                        <h3>Book Tittle: </h3>
+                        <p>Author: </p>
+                        <p>Year: </p>
+                        <div class="action">
+                            <button id="completeBook" class="green">Selesai Dibaca</button>
+                            <button id="favoriteBook" class="yellow">Jadikan Favorite</button>
+                            <button id="deleteBook" class="red">Hapus</button>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <span>Bookshelf &copy; 2022, Fajar Alfiantino</span>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/storage.js"></script>
+</body>
+
+</html>

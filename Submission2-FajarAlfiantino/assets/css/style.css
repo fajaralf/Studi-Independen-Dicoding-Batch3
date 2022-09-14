@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+* {
+  font-family: "PT Serif", serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  margin: 3em 5em;
+  background-color: lightgray;
+}
+
+/* Header */
+header {
+  background-color: lightgoldenrodyellow;
+  padding: 1em;
+  box-shadow: 0.3em 0.3em 0.3em;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  /* background-color: lightskyblue; */
+  /* border: 2px solid black; */
+  /* border-radius: 1em; */
+  margin-bottom: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+}
+.card-input {
+  width: 70%;
+}
+aside {
+  background-color: aquamarine;
+  width: 30%;
+  height: min-content;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1em;
+}
+.card-search {
+  padding: 1em;
+}
+.bookShelf {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  background-color: blanchedalmond;
+}
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 70%;
+  background-color: blanchedalmond;
+}
+.input_section > form > .input {
+  margin: 1em 0;
+}
+.input_section button {
+  background-color: tomato;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 1em;
+  cursor: pointer;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.input_section button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.input_section button > span {
+  font-weight: bold;
+}
+.input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+.input_inline {
+  margin: 1em 3em 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section label {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.input_inline > input {
+  margin-right: 5em;
+}
+.action {
+  align-items: center;
+  justify-content: baseline;
+}
+.green {
+  background-color: green;
+  margin: 0 1em 0 0;
+  border-radius: 10px;
+}
+.red {
+  background-color: red;
+  margin: 0 1em 0 0;
+  border-radius: 10px;
+}
+.yellow {
+  background-color: yellow;
+  margin: 0 1em 0 0;
+  border-radius: 10px;
+}
+.bookItem {
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  margin: 1em;
+}
+
+@media only screen and (max-width: 968px) {
+  body {
+    margin: 1em 1em;
+  }
+  .box {
+    flex-direction: column;
+    width: auto;
+  }
+  .input_section {
+    width: auto;
+  }
+  .card-input {
+    width: auto;
+  }
+  .card-search {
+    width: auto;
+  }
+  .checkbox {
+    flex-direction: column;
+  }
+  aside {
+    width: auto;
+  }
+  .bookShelf {
+    width: auto;
+  }
+}
