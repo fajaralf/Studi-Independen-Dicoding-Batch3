@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+navigation-bar {
+  display: block;
+}
+
+body {
+  display: block;
+  background-color: black;
+}
+
+main {
+  display: block;
+}
+
+footer-bar {
+  display: block;
+}
