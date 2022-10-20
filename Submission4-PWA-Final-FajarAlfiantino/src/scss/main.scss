@@ -1,0 +1,97 @@
+@import './variable.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 0.8em;
+  color: $dark-color;
+}
+
+main {
+  width: 100%;
+  margin: 1em auto;
+  display: block;
+}
+.content {
+  padding: 2em;
+  z-index: -1;
+}
+
+.latest {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  a {
+    color: $primary-color;
+    padding: 1.7em;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+    h1 {
+      height: 2em;
+      font-weight: 700;
+      font-size: 2em;
+      width: auto;
+      display: block;
+    }
+  }
+}
+
+footer {
+  background-color: $dark-color;
+  color: white;
+  font-size: 1em;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 16px;
+  background-color: $accent-color;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  height: 44px;
+  text-align: center;
+
+  &:focus {
+    top: 5em;
+  }
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-color;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 1.5em;
+  color: E7F6F2;
+  cursor: pointer;
+  i {
+    color: $accent-color;
+  }
+}

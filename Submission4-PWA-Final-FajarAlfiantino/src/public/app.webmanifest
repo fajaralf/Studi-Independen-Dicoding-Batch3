@@ -1,0 +1,38 @@
+{
+  "id": "RestoFind-pwa-1",
+  "start_url": "./index.html",
+  "name": "RestoFind",
+  "short_name": "RestoFind",
+  "description": "Find the best restaurants only on the best websites.",
+  "display": "standalone",
+  "background_color": "#395B64",
+  "theme_color": "#A5C9CA",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-256x256.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

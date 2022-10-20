@@ -1,0 +1,33 @@
+@import './variable.scss';
+
+hero-element {
+  z-index: -1;
+  display: block;
+  background-color: $dark-color;
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+    background-image: url('../public/images/heros/hero-image_4.jpg');
+    .heroinner {
+      margin: 0 auto;
+      max-width: 800px;
+      .herotitle {
+        color: $light-color;
+        font-weight: 600;
+        font-size: 36px;
+        text-shadow: 1px 1px #141414;
+      }
+      .herosubtitle {
+        color: $light-color;
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow: 1px 1px #141414;
+      }
+    }
+  }
+}
